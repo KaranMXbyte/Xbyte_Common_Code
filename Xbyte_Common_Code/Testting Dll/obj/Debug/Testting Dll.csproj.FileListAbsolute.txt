@@ -1,0 +1,15 @@
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\Testting Dll.exe.config
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\Testting Dll.exe
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\Testting Dll.pdb
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\Xbyte_Common_Code.dll
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\MySql.Data.dll
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\Xbyte_Common_Code.pdb
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\bin\Debug\MySql.Data.xml
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting Dll.csprojAssemblyReference.cache
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting_Dll.Form1.resources
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting_Dll.Properties.Resources.resources
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting Dll.csproj.GenerateResource.cache
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting Dll.csproj.CoreCompileInputs.cache
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting Dll.csproj.CopyComplete
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting Dll.exe
+D:\Projects\Common code\Xbyte_Common_Code\Testting Dll\obj\Debug\Testting Dll.pdb

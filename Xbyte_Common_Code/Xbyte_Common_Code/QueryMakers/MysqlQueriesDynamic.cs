@@ -20,10 +20,11 @@ namespace Xbyte_Common_Code.QueryMakers
 
         public MysqlQueriesDynamic(StringConstraints stringConstraints, FileManagement fileManagement)
         {
+            this.stringConstraints = stringConstraints;
             dbContext = new DbContext(fileManagement, stringConstraints);
         }
 
-        public string GetSearchQuery(string Project)
+        public string GetSearchQuery(string Project,string date,string FileName)
         {
             string NewQuery = "";
             query = "select * from header_list where project='"+ Project + "' and E_office_Header_value<>''";
@@ -31,9 +32,11 @@ namespace Xbyte_Common_Code.QueryMakers
             NewQuery = "select ";
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                NewQuery += dt.Rows[i][1] + " as " + dt.Rows[i][2] +" ";
+                if (NewQuery != "select ")
+                    NewQuery += ", ";
+                NewQuery += "`" +dt.Rows[i][1] + "` as `" + dt.Rows[i][2] +"` ";
             }
-            NewQuery = " from productdata_" + stringConstraints.Date +" ";
+            NewQuery += " ,hashid from productdata_" + date + " where project_name='" + Project + "' and filename='"+ FileName + "'";
             return NewQuery;
         }
     }

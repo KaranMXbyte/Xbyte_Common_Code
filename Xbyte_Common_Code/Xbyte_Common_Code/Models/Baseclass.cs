@@ -8,6 +8,10 @@ namespace Xbyte_Common_Code.Models
 {
     class Baseclass
     {
+        public string Id { get; set; }
         public string CreateTime { get; set; }
+        public string HashId { get; set; }
+        public string FeedID { get; set; }
+        public string FileName { get; set; }
     }
 }

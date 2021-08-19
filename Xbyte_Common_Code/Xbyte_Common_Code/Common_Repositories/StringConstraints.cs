@@ -29,19 +29,30 @@ namespace Xbyte_Common_Code.Common_Repositories
         {
             get
             {
-                return Application.StartupPath + "\\Logs\\log_" + Date + ".txt";
+                return Application.StartupPath + "\\Logs\\log_" + CurrentDate + ".txt";
             }
         }
         #endregion
 
         /// <summary>
-        /// getting date formate (yyyy_MM_dd)
+        /// getting Current Date formate (yyyy_MM_dd)
         /// </summary>
-        public string Date
+        public string CurrentDate
         {
             get
             {
                 return DateTime.Now.ToString("yyyy_MM_dd");
+            }
+        }
+
+        /// <summary>
+        /// getting Past Date formate (yyyy_MM_dd)
+        /// </summary>
+        public string PastDate
+        {
+            get
+            {
+                return DateTime.Now.AddDays(-1).ToString("yyyy_MM_dd");
             }
         }
     }

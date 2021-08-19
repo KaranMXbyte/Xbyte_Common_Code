@@ -44,6 +44,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Xbyte_Common_Code">
+      <HintPath>..\Xbyte_Common_Code\bin\Debug\Xbyte_Common_Code.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Testting Dll.cs">

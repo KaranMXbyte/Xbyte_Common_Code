@@ -24,7 +24,7 @@ namespace Xbyte_Common_Code.QueryMakers
             dbContext = new DbContext(fileManagement, stringConstraints);
         }
 
-        public string GetSearchQuery(string Project,string date,string FileName)
+        public string GetSearchQuery(string Project,string date,string feedId)
         {
             string NewQuery = "";
             query = "select * from header_list where project='"+ Project + "' and E_office_Header_value<>''";
@@ -36,7 +36,7 @@ namespace Xbyte_Common_Code.QueryMakers
                     NewQuery += ", ";
                 NewQuery += "`" +dt.Rows[i][1] + "` as `" + dt.Rows[i][2] +"` ";
             }
-            NewQuery += " ,hashid from productdata_" + date + " where project_name='" + Project + "' and filename='"+ FileName + "'";
+            NewQuery += " ,hashid from productdata_" + date + " where project_name='" + Project + "' and feedid='"+ feedId + "'";
             return NewQuery;
         }
     }

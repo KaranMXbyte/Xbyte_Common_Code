@@ -12,9 +12,11 @@ namespace Xbyte_Common_Code.QAs
 
         public bool IsContentNumeric(string value)
         {
+            if (value == null)
+                value = "";            
             Regex regex = new Regex("^[0-9.,]*$");
 
-            if (regex.IsMatch(value) || Convert.ToString(value).Trim() == "")
+            if (regex.IsMatch(value) || value.Trim() == "")
                 return true;
             else
                 return false;

@@ -32,6 +32,17 @@ namespace Xbyte_Common_Code.Common_Repositories
                 return Application.StartupPath + "\\Logs\\log_" + CurrentDate + ".txt";
             }
         }
+
+        /// <summary>
+        /// Log file path with date
+        /// </summary>
+        public string AutoJiraFilePath
+        {
+            get
+            {
+                return @"D:\IssueDetect\"+ CurrentDate + "\\";
+            }
+        }
         #endregion
 
         /// <summary>

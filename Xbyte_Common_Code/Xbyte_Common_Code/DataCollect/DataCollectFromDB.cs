@@ -9,7 +9,7 @@ namespace Xbyte_Common_Code.DataCollect
     {
         #region Variables
 
-        List<P_And_G_Model> p_And_G_Models;
+        List<P_And_G_Model_Core> p_And_G_Models;
         DbContext dbContext;
         FileManagement fileManagement;
         StringConstraints stringConstraints;
@@ -24,21 +24,23 @@ namespace Xbyte_Common_Code.DataCollect
             this.fileManagement = fileManagement;
             this.stringConstraints = stringConstraints;
 
-            p_And_G_Models = new List<P_And_G_Model>();
+            p_And_G_Models = new List<P_And_G_Model_Core>();
             dbContext = new DbContext(fileManagement, stringConstraints);
         }
         #endregion
 
-        public List<P_And_G_Model> GetP_And_G_DataFromDb(string query)
+        public List<P_And_G_Model_Core> GetP_And_G_DataFromDb(string query)
         {
-            List<P_And_G_Model> Data = new List<P_And_G_Model>();
+            List<P_And_G_Model_Core> Data = new List<P_And_G_Model_Core>();
             dt = dbContext.ExecuteSQLDataTable(query);
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                P_And_G_Model temp_P_And_G_Model = new P_And_G_Model();
+                P_And_G_Model_Core temp_P_And_G_Model = new P_And_G_Model_Core();
                 temp_P_And_G_Model.Url= dt.Rows[i]["url"].ToString();
                 temp_P_And_G_Model.ItemId = dt.Rows[i]["itemid"].ToString();
+                temp_P_And_G_Model.FinalPrice = dt.Rows[i]["final_price"].ToString();
+                temp_P_And_G_Model.Description = dt.Rows[i]["description"].ToString();
                 Data.Add(temp_P_And_G_Model);
             }
 

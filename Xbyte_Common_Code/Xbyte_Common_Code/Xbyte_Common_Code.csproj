@@ -63,6 +63,7 @@
     <Compile Include="DataCollect\DataCollectFromDB.cs" />
     <Compile Include="DbContext.cs" />
     <Compile Include="Models\Baseclass.cs" />
+    <Compile Include="Models\IssueDetectModel.cs" />
     <Compile Include="Models\P_And_G_Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QAs\QA_Checker.cs" />

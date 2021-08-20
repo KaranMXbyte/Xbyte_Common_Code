@@ -23,7 +23,7 @@ namespace Testting_Dll
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            P_And_G_Common.CheckData("t1.Lazada_P&G.vn.2021-08-12T00_00_00.2021-08-12T00_00_00");
+            bool issue= P_And_G_Common.CheckData_Core("1010");            
         }
     }
 }

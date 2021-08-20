@@ -1,6 +1,6 @@
 ﻿namespace Xbyte_Common_Code.Models
 {
-    class P_And_G_Model : Baseclass
+   public class P_And_G_Model_Core : Baseclass
     {
         public string Url { get; set; }
         public string ItemId { get; set; }

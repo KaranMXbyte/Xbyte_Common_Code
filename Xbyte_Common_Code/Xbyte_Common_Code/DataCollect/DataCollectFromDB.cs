@@ -41,6 +41,9 @@ namespace Xbyte_Common_Code.DataCollect
                 temp_P_And_G_Model.ItemId = dt.Rows[i]["itemid"].ToString();
                 temp_P_And_G_Model.FinalPrice = dt.Rows[i]["final_price"].ToString();
                 temp_P_And_G_Model.Description = dt.Rows[i]["description"].ToString();
+                temp_P_And_G_Model.Discount = dt.Rows[i]["Discount"].ToString();
+                temp_P_And_G_Model.HashId = dt.Rows[i]["HashId"].ToString();
+                temp_P_And_G_Model.Stock = dt.Rows[i]["stock"].ToString();
                 Data.Add(temp_P_And_G_Model);
             }
 

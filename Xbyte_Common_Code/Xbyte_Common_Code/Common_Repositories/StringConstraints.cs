@@ -66,5 +66,16 @@ namespace Xbyte_Common_Code.Common_Repositories
                 return DateTime.Now.AddDays(-1).ToString("yyyy_MM_dd");
             }
         }
+
+        /// <summary>
+        /// getting CreateTime
+        /// </summary>
+        public string CreateTime
+        {
+            get
+            {
+                return DateTime.Now.ToString();
+            }
+        }
     }
 }

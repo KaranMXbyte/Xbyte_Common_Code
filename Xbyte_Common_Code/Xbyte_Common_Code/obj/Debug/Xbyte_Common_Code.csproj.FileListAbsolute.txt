@@ -9,3 +9,4 @@ D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Comm
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.csproj.CopyComplete
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.dll
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.pdb
+D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.csprojAssemblyReference.cache

@@ -31,7 +31,11 @@ namespace Xbyte_Common_Code.Clients_Main_files
             dataCollectFromDB = new DataCollectFromDB(fileManagement, stringConstraints);
         }
 
-
+        /// <summary>
+        /// This method use for P&G core feed Project
+        /// </summary>
+        /// <param name="feedId">E_office feed id</param>
+        /// <returns></returns>
         public bool CheckData_Core(string feedId)
         {
             List<IssueDetectModel> issueDetectList = new List<IssueDetectModel>();
@@ -56,7 +60,7 @@ namespace Xbyte_Common_Code.Clients_Main_files
                     if (!IsCheckStatus)
                         issueDetectList.Add(GetIssueDetails(CurrentFileData[i].Url, "Stock not integer", "Stock"));
 
-                    if (SingleRowDataFromPastTable == null) // if SingleRowData has a new row then qa will stop from here                    
+                    if (SingleRowDataFromPastTable == null) // if SingleRowData has a new row then qa will finish from here                    
                         continue;
                 }
 
@@ -73,6 +77,7 @@ namespace Xbyte_Common_Code.Clients_Main_files
             }
 
             fileManagement.CreateFile(stringConstraints.AutoJiraFilePath + Project_core + "_feed_id_" + feedId + ".txt", Error, false);
+
             if (issueDetectList.Count != 0)
                 return true;
             else

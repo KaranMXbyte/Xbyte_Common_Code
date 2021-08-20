@@ -5,7 +5,6 @@ D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\bin\Debug\MySql.Data
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\bin\Debug\HtmlAgilityPack.pdb
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\bin\Debug\HtmlAgilityPack.xml
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\bin\Debug\MySql.Data.xml
-D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.csprojAssemblyReference.cache
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.csproj.CoreCompileInputs.cache
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.csproj.CopyComplete
 D:\Projects\Common code\Xbyte_Common_Code\Xbyte_Common_Code\obj\Debug\Xbyte_Common_Code.dll
